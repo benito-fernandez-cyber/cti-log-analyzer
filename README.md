@@ -3,6 +3,7 @@ Herramienta en Python con interfaz gráfica (CustomTkinter) para el análisis de
 # Analizador de Logs de Red - Threat Intelligence Tool (CTI)
 
 Herramienta gráfica desarrollada en Python orientada a analistas de seguridad en entornos **SOC** y **Blue Team**. Automatiza el análisis de reputación de direcciones IP en logs de tráfico web (por ejemplo, generados con **Burp Suite**), conectándose en tiempo real con la API de **VirusTotal**.
+![Demostración de la aplicación](demo.png)
 
 ## 🚀 Características Principales
 * **Extracción Precisa:** Expresión regular matemática avanzada para validar octetos IPv4 reales (del 0 al 255), descartando rangos locales (`192.168.x.x`, `127.x.x.x`) y filtrando falsos positivos.
