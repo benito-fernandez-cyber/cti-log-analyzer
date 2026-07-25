@@ -19,7 +19,7 @@ Herramienta gráfica desarrollada en Python orientada a analistas de seguridad e
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/TU-USUARIO/cti-log-analyzer.git](https://github.com/TU-USUARIO/cti-log-analyzer.git)
+   git clone https://github.com/benito-fernandez-cyber/cti-log-analyzer.git
 
    Instalar las dependencias necesarias:
    pip install customtkinter requests
