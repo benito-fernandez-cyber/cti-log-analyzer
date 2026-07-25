@@ -1,0 +1,917 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000       192.168.1.135         142.251.140.234       UDP      71     60894 → 443 Len=29
+      2 0.010427       3.173.21.63           192.168.1.135         TLSv1.2  93     Application Data
+      3 0.011295       3.173.21.63           192.168.1.135         TCP      60     443 → 5376 [FIN, ACK] Seq=40 Ack=1 Win=143 Len=0
+      4 0.011651       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [ACK] Seq=1 Ack=40 Win=255 Len=0
+      5 0.013004       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [ACK] Seq=1 Ack=41 Win=255 Len=0
+      6 0.015615       192.168.1.135         3.173.21.63           TLSv1.2  78     Application Data
+      7 0.015780       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [FIN, ACK] Seq=25 Ack=41 Win=255 Len=0
+      8 0.016017       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [RST, ACK] Seq=26 Ack=41 Win=0 Len=0
+      9 0.019015       142.251.140.234       192.168.1.135         UDP      67     443 → 60894 Len=25
+     10 0.031310       3.173.21.63           192.168.1.135         TCP      60     443 → 5376 [ACK] Seq=41 Ack=25 Win=143 Len=0
+     11 0.031310       3.173.21.63           192.168.1.135         TCP      60     443 → 5376 [ACK] Seq=41 Ack=26 Win=143 Len=0
+     12 0.031440       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [RST] Seq=25 Win=0 Len=0
+     13 0.031506       192.168.1.135         3.173.21.63           TCP      54     5376 → 443 [RST] Seq=26 Win=0 Len=0
+     14 0.108975       192.168.1.135         98.85.113.49          TCP      55     50364 → 443 [ACK] Seq=1 Ack=1 Win=253 Len=1 [TCP segment of a reassembled PDU]
+     15 0.211692       98.85.113.49          192.168.1.135         TCP      66     443 → 50364 [ACK] Seq=1 Ack=2 Win=187 Len=0 SLE=1 SRE=2
+     16 0.283100       192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=1 Ack=1 Win=251 Len=110 [TCP segment of a reassembled PDU]
+     17 0.285458       192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=1 Ack=111 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+     18 0.330164       192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=111 Ack=111 Win=251 Len=0
+     19 0.551922       fe80::1138:e6ee:2535:242d fe80::1               DNS      96     Standard query 0x211e A image.lemonpi.io
+     20 0.553333       fe80::1               fe80::1138:e6ee:2535:242d DNS      112    Standard query response 0x211e A image.lemonpi.io A 34.110.129.219
+     21 0.768554       192.168.1.135         104.18.19.125         TCP      66     22890 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+     22 0.784890       104.18.19.125         192.168.1.135         TCP      66     443 → 22890 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+     23 0.785194       192.168.1.135         104.18.19.125         TCP      54     22890 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+     24 0.789408       192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+     25 0.805682       104.18.19.125         192.168.1.135         TCP      60     443 → 22890 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+     26 0.807388       104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+     27 0.807388       104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+     28 0.816880       192.168.1.135         104.18.19.125         TCP      54     22890 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+     29 0.833849       104.18.19.125         192.168.1.135         TCP      60     443 → 22890 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+     30 0.834750       192.168.1.135         104.18.19.125         TCP      54     22890 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+     31 1.068045       44.207.32.147         192.168.1.135         TLSv1.2  93     Application Data
+     32 1.068045       44.207.32.147         192.168.1.135         TLSv1.2  78     Application Data
+     33 1.069018       44.207.32.147         192.168.1.135         TCP      60     443 → 63865 [FIN, ACK] Seq=64 Ack=1 Win=268 Len=0
+     34 1.069398       192.168.1.135         44.207.32.147         TCP      54     63865 → 443 [ACK] Seq=1 Ack=64 Win=253 Len=0
+     35 1.070448       192.168.1.135         44.207.32.147         TCP      54     63865 → 443 [ACK] Seq=1 Ack=65 Win=253 Len=0
+     36 1.072092       192.168.1.135         44.207.32.147         TLSv1.2  78     Application Data
+     37 1.072334       192.168.1.135         44.207.32.147         TCP      54     63865 → 443 [RST, ACK] Seq=25 Ack=65 Win=0 Len=0
+     38 1.172205       44.207.32.147         192.168.1.135         TCP      60     443 → 63865 [RST] Seq=65 Win=0 Len=0
+     39 1.799166       192.168.1.149         192.168.1.255         UDP      82     57621 → 57621 Len=40
+     40 3.539938       fe80::1               ff02::1               ICMPv6   102    Router Advertisement from f4:fc:49:1d:66:e0
+     41 3.728449       192.168.1.135         104.18.19.125         TCP      66     22891 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+     42 3.744598       104.18.19.125         192.168.1.135         TCP      66     443 → 22891 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+     43 3.744693       192.168.1.135         104.18.19.125         TCP      54     22891 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+     44 3.747643       192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+     45 3.764430       104.18.19.125         192.168.1.135         TCP      60     443 → 22891 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+     46 3.768543       104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+     47 3.768696       104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+     48 3.768721       192.168.1.135         104.18.19.125         TCP      54     22891 → 443 [ACK] Seq=518 Ack=2801 Win=65280 Len=0
+     49 3.772056       192.168.1.135         104.18.19.125         TCP      54     22891 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+     50 3.789836       104.18.19.125         192.168.1.135         TCP      60     443 → 22891 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+     51 3.790041       192.168.1.135         104.18.19.125         TCP      54     22891 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+     52 3.901767       192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=1 Ack=1 Win=252 Len=110 [TCP segment of a reassembled PDU]
+     53 3.964778       192.168.1.135         172.64.155.209        TCP      55     50297 → 443 [ACK] Seq=1 Ack=1 Win=251 Len=1 [TCP segment of a reassembled PDU]
+     54 3.983676       172.64.155.209        192.168.1.135         TCP      66     443 → 50297 [ACK] Seq=1 Ack=2 Win=16 Len=0 SLE=1 SRE=2
+     55 4.006640       192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=1 Ack=111 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+     56 4.060542       192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=111 Ack=111 Win=251 Len=0
+     57 4.508066       192.168.1.135         31.13.83.51           TLSv1.2  122    Application Data
+     58 4.524083       31.13.83.51           192.168.1.135         TCP      60     443 → 16621 [ACK] Seq=1 Ack=69 Win=294 Len=0
+     59 4.603097       31.13.83.51           192.168.1.135         TLSv1.2  124    Application Data
+     60 4.649994       192.168.1.135         31.13.83.51           TCP      54     16621 → 443 [ACK] Seq=69 Ack=71 Win=255 Len=0
+     61 5.096605       192.168.1.135         141.227.128.128       TCP      55     34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1 [TCP segment of a reassembled PDU]
+     62 5.112954       141.227.128.128       192.168.1.135         TCP      66     443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+     63 5.288762       192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=111 Ack=111 Win=251 Len=110 [TCP segment of a reassembled PDU]
+     64 5.290405       192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=111 Ack=221 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+     65 5.335941       192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=221 Ack=221 Win=250 Len=0
+     66 5.587209       192.168.1.135         104.18.19.125         TCP      66     22892 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+     67 5.595115       142.251.140.234       192.168.1.135         UDP      317    443 → 60894 Len=275
+     68 5.604510       104.18.19.125         192.168.1.135         TCP      66     443 → 22892 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+     69 5.604704       192.168.1.135         104.18.19.125         TCP      54     22892 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+     70 5.608369       192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+     71 5.608972       192.168.1.135         142.251.140.234       UDP      75     60894 → 443 Len=33
+     72 5.624677       104.18.19.125         192.168.1.135         TCP      60     443 → 22892 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+     73 5.626445       104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+     74 5.626445       104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+     75 5.635280       192.168.1.135         104.18.19.125         TCP      54     22892 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+     76 5.652182       104.18.19.125         192.168.1.135         TCP      60     443 → 22892 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+     77 5.653039       192.168.1.135         104.18.19.125         TCP      54     22892 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+     78 6.008871       192.168.1.135         216.58.205.42         TCP      55     18078 → 443 [ACK] Seq=1 Ack=1 Win=255 Len=1 [TCP segment of a reassembled PDU]
+     79 6.023748       216.58.205.42         192.168.1.135         TCP      66     443 → 18078 [ACK] Seq=1 Ack=2 Win=1043 Len=0 SLE=1 SRE=2
+     80 6.137265       fe80::1138:e6ee:2535:242d fe80::1               DNS      96     Standard query 0x5659 A image.lemonpi.io
+     81 6.138684       fe80::1               fe80::1138:e6ee:2535:242d DNS      112    Standard query response 0x5659 A image.lemonpi.io A 34.110.129.219
+     82 6.919147       f4:fc:49:1d:66:e0     IEEE-1905.1-Control   ieee1905 225    Topology discovery
+     83 7.524563       192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+     84 7.841921       192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+     85 7.986398       192.168.1.135         104.18.19.125         TCP      55     30813 → 443 [ACK] Seq=1 Ack=1 Win=252 Len=1 [TCP segment of a reassembled PDU]
+     86 8.004195       104.18.19.125         192.168.1.135         TCP      66     443 → 30813 [ACK] Seq=1 Ack=2 Win=16 Len=0 SLE=1 SRE=2
+     87 8.178173       192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+     88 8.335752       192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+     89 8.498047       52.98.200.178         192.168.1.135         TLSv1.2  91     Application Data
+     90 8.498047       52.98.200.178         192.168.1.135         TLSv1.2  96     Application Data
+     91 8.498047       52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+     92 8.498047       52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+     93 8.514517       192.168.1.135         52.98.200.178         TLSv1.2  124    Application Data, Application Data
+     94 8.585072       52.98.200.178         192.168.1.135         TCP      60     443 → 32457 [ACK] Seq=146 Ack=71 Win=253 Len=0
+     95 8.746450       192.168.1.135         104.18.19.125         TCP      66     22893 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+     96 8.762088       104.18.19.125         192.168.1.135         TCP      66     443 → 22893 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+     97 8.762200       192.168.1.135         104.18.19.125         TCP      54     22893 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+     98 8.764372       192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+     99 8.780056       104.18.19.125         192.168.1.135         TCP      60     443 → 22893 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    100 8.783376       104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    101 8.783376       104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    102 8.787755       192.168.1.135         104.18.19.125         TCP      54     22893 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    103 8.804477       104.18.19.125         192.168.1.135         TCP      60     443 → 22893 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    104 8.804763       192.168.1.135         104.18.19.125         TCP      54     22893 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    105 9.024697       192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=111 Ack=111 Win=251 Len=110 [TCP segment of a reassembled PDU]
+    106 9.128370       192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=111 Ack=221 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    107 9.182508       192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=221 Ack=221 Win=251 Len=0
+    108 10.301823      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=221 Ack=221 Win=250 Len=110 [TCP segment of a reassembled PDU]
+    109 10.303547      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=221 Ack=331 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    110 10.348170      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=331 Ack=331 Win=250 Len=0
+    111 10.572159      192.168.1.135         192.168.1.255         UDP      1462   889 → 889 Len=1420
+    112 10.783878      192.168.1.135         104.18.19.125         TCP      66     22894 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    113 10.800261      104.18.19.125         192.168.1.135         TCP      66     443 → 22894 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    114 10.800521      192.168.1.135         104.18.19.125         TCP      54     22894 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    115 10.805242      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    116 10.821154      104.18.19.125         192.168.1.135         TCP      60     443 → 22894 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    117 10.824858      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    118 10.825035      104.18.19.125         192.168.1.135         TLSv1.3  1404   Application Data
+    119 10.825068      192.168.1.135         104.18.19.125         TCP      54     22894 → 443 [ACK] Seq=518 Ack=2803 Win=65280 Len=0
+    120 10.827692      192.168.1.135         104.18.19.125         TCP      54     22894 → 443 [FIN, ACK] Seq=518 Ack=2803 Win=65280 Len=0
+    121 10.844696      104.18.19.125         192.168.1.135         TCP      60     443 → 22894 [FIN, ACK] Seq=2803 Ack=519 Win=131072 Len=0
+    122 10.845021      192.168.1.135         104.18.19.125         TCP      54     22894 → 443 [ACK] Seq=519 Ack=2804 Win=65280 Len=0
+    123 12.886995      192.168.1.135         100.49.175.34         TCP      55     1471 → 443 [ACK] Seq=1 Ack=1 Win=250 Len=1 [TCP segment of a reassembled PDU]
+    124 13.011893      100.49.175.34         192.168.1.135         TCP      66     443 → 1471 [ACK] Seq=1 Ack=2 Win=140 Len=0 SLE=1 SRE=2
+    125 13.744778      192.168.1.135         104.18.19.125         TCP      66     22895 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    126 13.757642      fe80::1138:e6ee:2535:242d fe80::1               DNS      94     Standard query 0x8bd4 A api2.cursor.sh
+    127 13.761983      104.18.19.125         192.168.1.135         TCP      66     443 → 22895 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    128 13.762081      192.168.1.135         104.18.19.125         TCP      54     22895 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    129 13.762799      fe80::1               fe80::1138:e6ee:2535:242d DNS      269    Standard query response 0x8bd4 A api2.cursor.sh CNAME api2geo.cursor.sh CNAME api2direct.cursor.sh A 32.196.156.220 A 44.196.235.223 A 3.90.124.113 A 44.195.122.65 A 54.161.14.44 A 54.88.9.34 A 3.226.196.68 A 3.213.192.136
+    130 13.763933      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    131 13.764168      192.168.1.135         32.196.156.220        TCP      66     22896 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    132 13.780051      104.18.19.125         192.168.1.135         TCP      60     443 → 22895 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    133 13.782184      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    134 13.782347      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    135 13.782444      192.168.1.135         104.18.19.125         TCP      54     22895 → 443 [ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    136 13.786528      192.168.1.135         104.18.19.125         TCP      54     22895 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    137 13.802459      104.18.19.125         192.168.1.135         TCP      60     443 → 22895 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    138 13.803461      192.168.1.135         104.18.19.125         TCP      54     22895 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    139 13.874243      32.196.156.220        192.168.1.135         TCP      66     443 → 22896 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    140 13.874756      192.168.1.135         32.196.156.220        TCP      54     22896 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    141 13.881249      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    142 13.991641      32.196.156.220        192.168.1.135         TCP      60     443 → 22896 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    143 13.991641      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    144 13.992324      32.196.156.220        192.168.1.135         TCP      1506   443 → 22896 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    145 13.992324      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    146 13.992324      32.196.156.220        192.168.1.135         TLSv1.3  70     Application Data
+    147 13.992579      192.168.1.135         32.196.156.220        TCP      54     22896 → 443 [ACK] Seq=518 Ack=4373 Win=65280 Len=0
+    148 14.003558      192.168.1.135         32.196.156.220        TLSv1.3  118    Change Cipher Spec, Application Data
+    149 14.114932      32.196.156.220        192.168.1.135         TCP      60     443 → 22896 [ACK] Seq=4373 Ack=582 Win=28160 Len=0
+    150 14.114932      32.196.156.220        192.168.1.135         TLSv1.3  233    Application Data
+    151 14.115031      192.168.1.135         32.196.156.220        TLSv1.3  1323   Application Data, Application Data, Application Data
+    152 14.134547      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=221 Ack=221 Win=251 Len=110 [TCP segment of a reassembled PDU]
+    153 14.189030      192.168.1.149         224.0.0.251           MDNS     87     Standard query 0x0000 PTR _spotify-connect._tcp.local, "QM" question
+    154 14.189195      fe80::9c4c:27ff:feef:f08d ff02::fb              MDNS     107    Standard query 0x0000 PTR _spotify-connect._tcp.local, "QM" question
+    155 14.216342      192.168.1.135         32.196.156.220        TCP      66     22897 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    156 14.227977      32.196.156.220        192.168.1.135         TLSv1.3  449    Application Data
+    157 14.227977      32.196.156.220        192.168.1.135         TCP      60     443 → 22896 [FIN, ACK] Seq=4947 Ack=1851 Win=46080 Len=0
+    158 14.229022      192.168.1.135         32.196.156.220        TCP      54     22896 → 443 [ACK] Seq=1851 Ack=4948 Win=64768 Len=0
+    159 14.229405      192.168.1.135         32.196.156.220        TLSv1.3  78     Application Data
+    160 14.229762      192.168.1.135         32.196.156.220        TCP      54     22896 → 443 [FIN, ACK] Seq=1875 Ack=4948 Win=64768 Len=0
+    161 14.229818      192.168.1.135         32.196.156.220        TCP      54     22896 → 443 [RST, ACK] Seq=1876 Ack=4948 Win=0 Len=0
+    162 14.246131      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=221 Ack=331 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    163 14.291644      192.168.1.147         224.0.0.251           MDNS     218    Standard query response 0x0000 PTR SpZc-91BA3F._spotify-connect._tcp.local TXT, cache flush A, cache flush 192.168.1.147 SRV, cache flush 0 0 41800 PS4-91BA3F.local NSEC, cache flush SpZc-91BA3F._spotify-connect._tcp.local NSEC, cache flush PS4-91BA3F.local
+    164 14.293996      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=331 Ack=331 Win=250 Len=0
+    165 14.326188      32.196.156.220        192.168.1.135         TCP      66     443 → 22897 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    166 14.326697      192.168.1.135         32.196.156.220        TCP      54     22897 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    167 14.335992      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    168 14.344015      32.196.156.220        192.168.1.135         TCP      60     443 → 22896 [RST] Seq=4948 Win=0 Len=0
+    169 14.446976      32.196.156.220        192.168.1.135         TCP      60     443 → 22897 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    170 14.447308      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    171 14.447308      32.196.156.220        192.168.1.135         TCP      1506   443 → 22897 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    172 14.447544      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    173 14.447544      32.196.156.220        192.168.1.135         TLSv1.3  79     Application Data
+    174 14.447675      192.168.1.135         32.196.156.220        TCP      54     22897 → 443 [ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    175 14.460839      192.168.1.135         32.196.156.220        TCP      54     22897 → 443 [FIN, ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    176 14.571481      32.196.156.220        192.168.1.135         TCP      60     443 → 22897 [FIN, ACK] Seq=4382 Ack=519 Win=28160 Len=0
+    177 14.572521      192.168.1.135         32.196.156.220        TCP      54     22897 → 443 [ACK] Seq=519 Ack=4383 Win=65280 Len=0
+    178 14.736617      192.168.1.135         104.18.19.125         TCP      66     22898 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    179 14.749232      192.168.1.135         32.196.156.220        TCP      66     22899 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    180 14.754779      104.18.19.125         192.168.1.135         TCP      66     443 → 22898 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    181 14.754900      192.168.1.135         104.18.19.125         TCP      54     22898 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    182 14.756337      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    183 14.773872      104.18.19.125         192.168.1.135         TCP      60     443 → 22898 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    184 14.776116      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    185 14.776116      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    186 14.784517      192.168.1.135         104.18.19.125         TCP      54     22898 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    187 14.807562      104.18.19.125         192.168.1.135         TCP      60     443 → 22898 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    188 14.808395      192.168.1.135         104.18.19.125         TCP      54     22898 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    189 14.859392      32.196.156.220        192.168.1.135         TCP      66     443 → 22899 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    190 14.859919      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    191 14.868733      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    192 14.980733      32.196.156.220        192.168.1.135         TCP      60     443 → 22899 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    193 14.980733      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    194 14.981204      32.196.156.220        192.168.1.135         TCP      1506   443 → 22899 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    195 14.981204      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    196 14.981204      32.196.156.220        192.168.1.135         TLSv1.3  70     Application Data
+    197 14.981371      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [ACK] Seq=518 Ack=4373 Win=65280 Len=0
+    198 14.989063      192.168.1.135         32.196.156.220        TLSv1.3  118    Change Cipher Spec, Application Data
+    199 14.989113      192.168.1.135         32.196.156.220        TLSv1.3  1611   Application Data, Application Data
+    200 15.099331      32.196.156.220        192.168.1.135         TCP      60     443 → 22899 [ACK] Seq=4373 Ack=582 Win=28160 Len=0
+    201 15.099331      32.196.156.220        192.168.1.135         TLSv1.3  233    Application Data
+    202 15.099863      192.168.1.135         32.196.156.220        TLSv1.3  81     Application Data
+    203 15.100337      32.196.156.220        192.168.1.135         TCP      60     443 → 22899 [ACK] Seq=4552 Ack=2139 Win=31232 Len=0
+    204 15.124192      192.168.1.135         141.227.128.128       TCP      55     [TCP Keep-Alive] 34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1
+    205 15.139569      141.227.128.128       192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+    206 15.215163      32.196.156.220        192.168.1.135         TLSv1.3  915    Application Data
+    207 15.215163      32.196.156.220        192.168.1.135         TCP      60     443 → 22899 [FIN, ACK] Seq=5413 Ack=2166 Win=31232 Len=0
+    208 15.227171      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [ACK] Seq=2166 Ack=5414 Win=64256 Len=0
+    209 15.227805      192.168.1.135         32.196.156.220        TLSv1.3  78     Application Data
+    210 15.228154      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [FIN, ACK] Seq=2190 Ack=5414 Win=64256 Len=0
+    211 15.228195      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [RST, ACK] Seq=2191 Ack=5414 Win=0 Len=0
+    212 15.315010      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=331 Ack=331 Win=250 Len=110 [TCP segment of a reassembled PDU]
+    213 15.316488      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=331 Ack=441 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    214 15.340162      32.196.156.220        192.168.1.135         TCP      60     [TCP Dup ACK 206#1] 443 → 22899 [ACK] Seq=5414 Ack=2166 Win=31232 Len=0
+    215 15.340162      32.196.156.220        192.168.1.135         TCP      66     [TCP Dup ACK 206#2] 443 → 22899 [ACK] Seq=5414 Ack=2166 Win=31232 Len=0 SLE=2190 SRE=2191
+    216 15.340196      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [RST] Seq=2166 Win=0 Len=0
+    217 15.340209      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [RST] Seq=2166 Win=0 Len=0
+    218 15.341173      32.196.156.220        192.168.1.135         TCP      66     443 → 22899 [ACK] Seq=5414 Ack=2191 Win=31232 Len=0 SLE=2190 SRE=2191
+    219 15.341192      192.168.1.135         32.196.156.220        TCP      54     22899 → 443 [RST] Seq=2191 Win=0 Len=0
+    220 15.362805      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=441 Ack=441 Win=255 Len=0
+    221 15.605171      192.168.1.135         104.18.19.125         TCP      66     22900 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    222 15.620885      104.18.19.125         192.168.1.135         TCP      66     443 → 22900 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    223 15.621106      192.168.1.135         104.18.19.125         TCP      54     22900 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    224 15.624639      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    225 15.640900      104.18.19.125         192.168.1.135         TCP      60     443 → 22900 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    226 15.642865      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    227 15.642865      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    228 15.654720      192.168.1.135         104.18.19.125         TCP      54     22900 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    229 15.672985      104.18.19.125         192.168.1.135         TCP      60     443 → 22900 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    230 15.673563      192.168.1.135         104.18.19.125         TCP      54     22900 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    231 15.785873      192.168.1.135         104.18.19.125         TCP      66     22901 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    232 15.802279      104.18.19.125         192.168.1.135         TCP      66     443 → 22901 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    233 15.802627      192.168.1.135         104.18.19.125         TCP      54     22901 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    234 15.808853      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    235 15.825151      104.18.19.125         192.168.1.135         TCP      60     443 → 22901 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    236 15.828018      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    237 15.828018      104.18.19.125         192.168.1.135         TLSv1.3  1404   Application Data
+    238 15.837142      192.168.1.135         104.18.19.125         TCP      54     22901 → 443 [FIN, ACK] Seq=518 Ack=2803 Win=65280 Len=0
+    239 15.853525      104.18.19.125         192.168.1.135         TCP      60     443 → 22901 [FIN, ACK] Seq=2803 Ack=519 Win=131072 Len=0
+    240 15.854462      192.168.1.135         104.18.19.125         TCP      54     22901 → 443 [ACK] Seq=519 Ack=2804 Win=65280 Len=0
+    241 16.993002      192.168.1.135         192.168.1.255         BROWSER  243    Host Announcement TEAM-BENI, Workstation, Server, NT Workstation
+    242 17.218745      192.168.1.135         32.196.156.220        TCP      66     22902 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    243 17.339756      32.196.156.220        192.168.1.135         TCP      66     443 → 22902 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    244 17.340305      192.168.1.135         32.196.156.220        TCP      54     22902 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    245 17.349035      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    246 17.469738      32.196.156.220        192.168.1.135         TCP      60     443 → 22902 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    247 17.470015      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    248 17.470015      32.196.156.220        192.168.1.135         TCP      1506   443 → 22902 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    249 17.470341      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    250 17.470341      32.196.156.220        192.168.1.135         TLSv1.3  79     Application Data
+    251 17.470405      192.168.1.135         32.196.156.220        TCP      54     22902 → 443 [ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    252 17.472828      192.168.1.135         32.196.156.220        TCP      54     22902 → 443 [FIN, ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    253 17.593625      32.196.156.220        192.168.1.135         TCP      60     443 → 22902 [FIN, ACK] Seq=4382 Ack=519 Win=28160 Len=0
+    254 17.593920      192.168.1.135         32.196.156.220        TCP      54     22902 → 443 [ACK] Seq=519 Ack=4383 Win=65280 Len=0
+    255 17.670783      192.168.1.149         239.255.255.250       SSDP     167    M-SEARCH * HTTP/1.1 
+    256 18.192692      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    257 18.334151      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    258 18.356336      172.64.148.235        192.168.1.135         TLSv1.2  78     Application Data
+    259 18.359528      192.168.1.135         172.64.148.235        TLSv1.2  82     Application Data
+    260 18.375862      172.64.148.235        192.168.1.135         TCP      60     443 → 22700 [ACK] Seq=25 Ack=29 Win=16 Len=0
+    261 18.590571      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    262 18.737396      192.168.1.135         104.18.19.125         TCP      66     22903 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    263 18.753734      104.18.19.125         192.168.1.135         TCP      66     443 → 22903 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    264 18.753907      192.168.1.135         104.18.19.125         TCP      54     22903 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    265 18.755485      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    266 18.768696      fe80::1               fe80::1138:e6ee:2535:242d ICMPv6   86     Neighbor Solicitation for fe80::1138:e6ee:2535:242d from f4:fc:49:1d:66:e0
+    267 18.768777      fe80::1138:e6ee:2535:242d fe80::1               ICMPv6   86     Neighbor Advertisement fe80::1138:e6ee:2535:242d (sol, ovr) is at 74:56:3c:dc:84:25
+    268 18.772742      104.18.19.125         192.168.1.135         TCP      60     443 → 22903 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    269 18.773656      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    270 18.773656      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    271 18.778983      192.168.1.135         104.18.19.125         TCP      54     22903 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    272 18.795025      104.18.19.125         192.168.1.135         TCP      60     443 → 22903 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    273 18.795241      192.168.1.135         104.18.19.125         TCP      54     22903 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    274 18.845596      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    275 19.260693      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=331 Ack=331 Win=250 Len=110 [TCP segment of a reassembled PDU]
+    276 19.368419      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=331 Ack=441 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    277 19.419423      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=441 Ack=441 Win=250 Len=0
+    278 19.616178      192.168.1.149         192.168.1.255         UDP      82     57621 → 57621 Len=40
+    279 20.203967      192.168.1.135         74.125.71.188         TCP      55     16937 → 5228 [ACK] Seq=1 Ack=1 Win=252 Len=1
+    280 20.237795      74.125.71.188         192.168.1.135         TCP      66     5228 → 16937 [ACK] Seq=1 Ack=2 Win=1042 Len=0 SLE=1 SRE=2
+    281 20.331420      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=441 Ack=441 Win=255 Len=110 [TCP segment of a reassembled PDU]
+    282 20.333351      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=441 Ack=551 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    283 20.378484      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=551 Ack=551 Win=255 Len=0
+    284 20.603170      192.168.1.135         142.251.140.234       UDP      71     60894 → 443 Len=29
+    285 20.623375      142.251.140.234       192.168.1.135         UDP      67     443 → 60894 Len=25
+    286 20.796215      192.168.1.135         104.18.19.125         TCP      66     22904 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    287 20.812675      104.18.19.125         192.168.1.135         TCP      66     443 → 22904 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    288 20.812782      192.168.1.135         104.18.19.125         TCP      54     22904 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    289 20.814453      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    290 20.817617      fe80::1138:e6ee:2535:242d fe80::1               DNS      88     Standard query 0xa8b6 A nike.com
+    291 20.830726      104.18.19.125         192.168.1.135         TCP      60     443 → 22904 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    292 20.832599      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    293 20.832599      104.18.19.125         192.168.1.135         TLSv1.3  1404   Application Data
+    294 20.837251      192.168.1.135         104.18.19.125         TCP      54     22904 → 443 [FIN, ACK] Seq=518 Ack=2803 Win=65280 Len=0
+    295 20.841959      192.168.1.135         100.90.1.1            DNS      68     Standard query 0xa8b6 A nike.com
+    296 20.842153      fe80::1               fe80::1138:e6ee:2535:242d DNS      152    Standard query response 0xa8b6 A nike.com A 65.8.202.125 A 65.8.202.46 A 65.8.202.8 A 65.8.202.108
+    297 20.846870      192.168.1.135         65.8.202.125          ICMP     74     Echo (ping) request  id=0x0001, seq=13/3328, ttl=128 (reply in 302)
+    298 20.847240      100.90.1.1            192.168.1.135         DNS      132    Standard query response 0xa8b6 A nike.com A 65.8.202.8 A 65.8.202.125 A 65.8.202.108 A 65.8.202.46
+    299 20.847272      192.168.1.135         100.90.1.1            ICMP     160    Destination unreachable (Port unreachable)
+    300 20.854437      104.18.19.125         192.168.1.135         TCP      60     443 → 22904 [FIN, ACK] Seq=2803 Ack=519 Win=131072 Len=0
+    301 20.854813      192.168.1.135         104.18.19.125         TCP      54     22904 → 443 [ACK] Seq=519 Ack=2804 Win=65280 Len=0
+    302 20.862099      65.8.202.125          192.168.1.135         ICMP     74     Echo (ping) reply    id=0x0001, seq=13/3328, ttl=248 (request in 297)
+    303 20.895345      216.58.205.42         192.168.1.135         TLSv1.2  127    Application Data
+    304 20.897798      192.168.1.135         216.58.205.42         TLSv1.2  78     Ignored Unknown Record
+    305 20.897897      192.168.1.135         216.58.205.42         TCP      54     18078 → 443 [FIN, ACK] Seq=26 Ack=74 Win=255 Len=0
+    306 20.913293      216.58.205.42         192.168.1.135         TCP      60     443 → 18078 [FIN, ACK] Seq=74 Ack=27 Win=1043 Len=0
+    307 20.913293      216.58.205.42         192.168.1.135         TCP      60     [TCP Keep-Alive] 443 → 18078 [ACK] Seq=74 Ack=26 Win=1043 Len=0
+    308 20.913468      192.168.1.135         216.58.205.42         TCP      54     18078 → 443 [ACK] Seq=27 Ack=75 Win=255 Len=0
+    309 21.149883      fe80::1138:e6ee:2535:242d fe80::1               DNS      95     Standard query 0xbcde A crl.anydesk.com
+    310 21.161189      fe80::1               fe80::1138:e6ee:2535:242d DNS      171    Standard query response 0xbcde No such name A crl.anydesk.com SOA ivan.ns.cloudflare.com
+    311 21.167143      192.168.1.135         1.1.1.1               DNS      75     Standard query 0x4507 A crl.anydesk.com
+    312 21.185368      1.1.1.1               192.168.1.135         DNS      134    Standard query response 0x4507 No such name A crl.anydesk.com SOA ivan.ns.cloudflare.com
+    313 21.580943      72.153.5.136          192.168.1.135         TCP      60     443 → 60986 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+    314 21.864176      192.168.1.135         65.8.202.125          ICMP     74     Echo (ping) request  id=0x0001, seq=14/3584, ttl=128 (reply in 315)
+    315 21.880113      65.8.202.125          192.168.1.135         ICMP     74     Echo (ping) reply    id=0x0001, seq=14/3584, ttl=248 (request in 314)
+    316 22.687946      192.168.1.149         192.168.1.255         UDP      82     57621 → 57621 Len=40
+    317 22.887063      192.168.1.135         65.8.202.125          ICMP     74     Echo (ping) request  id=0x0001, seq=15/3840, ttl=128 (reply in 318)
+    318 22.902999      65.8.202.125          192.168.1.135         ICMP     74     Echo (ping) reply    id=0x0001, seq=15/3840, ttl=248 (request in 317)
+    319 22.906035      fe80::1138:e6ee:2535:242d fe80::1               DNS      88     Standard query 0x4c9f A nike.com
+    320 22.907407      fe80::1               fe80::1138:e6ee:2535:242d DNS      152    Standard query response 0x4c9f A nike.com A 65.8.202.108 A 65.8.202.8 A 65.8.202.46 A 65.8.202.125
+    321 23.399767      192.168.1.135         192.168.1.255         UDP      1462   889 → 889 Len=1420
+    322 23.743322      192.168.1.135         104.18.19.125         TCP      66     22905 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    323 23.761848      104.18.19.125         192.168.1.135         TCP      66     443 → 22905 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    324 23.762381      192.168.1.135         104.18.19.125         TCP      54     22905 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    325 23.772397      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    326 23.788560      104.18.19.125         192.168.1.135         TCP      60     443 → 22905 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    327 23.791141      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    328 23.791141      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    329 23.804039      192.168.1.135         104.18.19.125         TCP      54     22905 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    330 23.820617      104.18.19.125         192.168.1.135         TCP      60     443 → 22905 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    331 23.820997      192.168.1.135         104.18.19.125         TCP      54     22905 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    332 23.910388      192.168.1.135         65.8.202.125          ICMP     74     Echo (ping) request  id=0x0001, seq=16/4096, ttl=128 (reply in 333)
+    333 23.925960      65.8.202.125          192.168.1.135         ICMP     74     Echo (ping) reply    id=0x0001, seq=16/4096, ttl=248 (request in 332)
+    334 24.373919      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=441 Ack=441 Win=250 Len=110 [TCP segment of a reassembled PDU]
+    335 24.485533      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=441 Ack=551 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    336 24.532393      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=551 Ack=551 Win=255 Len=0
+    337 25.154940      192.168.1.135         141.227.128.128       TCP      55     [TCP Keep-Alive] 34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1
+    338 25.170998      141.227.128.128       192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+    339 25.348107      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=551 Ack=551 Win=255 Len=110 [TCP segment of a reassembled PDU]
+    340 25.350351      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=551 Ack=661 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    341 25.394193      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=661 Ack=661 Win=255 Len=0
+    342 25.590264      192.168.1.135         104.18.19.125         TCP      66     22906 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    343 25.606380      104.18.19.125         192.168.1.135         TCP      66     443 → 22906 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    344 25.606481      192.168.1.135         104.18.19.125         TCP      54     22906 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    345 25.609891      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    346 25.626297      104.18.19.125         192.168.1.135         TCP      60     443 → 22906 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    347 25.629536      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    348 25.629536      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    349 25.633629      192.168.1.135         104.18.19.125         TCP      54     22906 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    350 25.649917      104.18.19.125         192.168.1.135         TCP      60     443 → 22906 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    351 25.650136      192.168.1.135         104.18.19.125         TCP      54     22906 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    352 25.828281      f4:fc:49:1d:66:e0     Broadcast             ARP      60     Who has 192.168.1.142? Tell 192.168.1.1
+    353 25.891958      192.168.1.135         31.13.83.51           TLSv1.2  122    Application Data
+    354 25.908175      31.13.83.51           192.168.1.135         TCP      60     443 → 16621 [ACK] Seq=71 Ack=137 Win=294 Len=0
+    355 25.986837      31.13.83.51           192.168.1.135         TLSv1.2  124    Application Data
+    356 26.032792      192.168.1.135         31.13.83.51           TCP      54     16621 → 443 [ACK] Seq=137 Ack=141 Win=255 Len=0
+    357 26.316884      142.251.140.234       192.168.1.135         UDP      317    443 → 60894 Len=275
+    358 26.338667      192.168.1.135         142.251.140.234       UDP      75     60894 → 443 Len=33
+    359 28.497958      52.98.200.178         192.168.1.135         TLSv1.2  91     Application Data
+    360 28.497958      52.98.200.178         192.168.1.135         TLSv1.2  96     Application Data
+    361 28.497958      52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+    362 28.497958      52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+    363 28.499160      fe80::1138:e6ee:2535:242d fe80::1               DNS      88     Standard query 0xc73b A nike.com
+    364 28.500546      fe80::1               fe80::1138:e6ee:2535:242d DNS      152    Standard query response 0xc73b A nike.com A 65.8.202.125 A 65.8.202.108 A 65.8.202.8 A 65.8.202.46
+    365 28.511194      192.168.1.135         52.98.200.178         TLSv1.2  124    Application Data, Application Data
+    366 28.591888      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    367 28.594578      52.98.200.178         192.168.1.135         TCP      60     443 → 32457 [ACK] Seq=291 Ack=141 Win=253 Len=0
+    368 28.847030      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    369 29.151038      192.168.1.135         155.102.214.180       TCP      55     8414 → 443 [ACK] Seq=1 Ack=1 Win=255 Len=1 [TCP segment of a reassembled PDU]
+    370 29.167062      155.102.214.180       192.168.1.135         TCP      66     443 → 8414 [ACK] Seq=1 Ack=2 Win=83 Len=0 SLE=1 SRE=2
+    371 29.262945      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    372 29.342965      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    373 29.487707      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=551 Ack=551 Win=255 Len=110 [TCP segment of a reassembled PDU]
+    374 29.606652      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=551 Ack=661 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    375 29.647117      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=661 Ack=661 Win=255 Len=0
+    376 30.366850      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=661 Ack=661 Win=255 Len=110 [TCP segment of a reassembled PDU]
+    377 30.368938      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=661 Ack=771 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    378 30.414065      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=771 Ack=771 Win=254 Len=0
+    379 30.654736      192.168.1.135         4.207.247.138         TCP      55     47954 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1 [TCP segment of a reassembled PDU]
+    380 30.702457      4.207.247.138         192.168.1.135         TCP      66     443 → 47954 [ACK] Seq=1 Ack=2 Win=8091 Len=0 SLE=1 SRE=2
+    381 30.811204      192.168.1.135         104.18.19.125         TCP      66     22907 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    382 30.827186      104.18.19.125         192.168.1.135         TCP      66     443 → 22907 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    383 30.827346      192.168.1.135         104.18.19.125         TCP      54     22907 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    384 30.830139      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    385 30.846358      104.18.19.125         192.168.1.135         TCP      60     443 → 22907 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    386 30.847458      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    387 30.847458      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    388 30.855443      192.168.1.135         104.18.19.125         TCP      54     22907 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    389 30.872579      104.18.19.125         192.168.1.135         TCP      60     443 → 22907 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    390 30.873489      192.168.1.135         104.18.19.125         TCP      54     22907 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    391 31.019418      192.168.1.135         100.49.175.34         TCP      55     62100 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1 [TCP segment of a reassembled PDU]
+    392 31.141419      100.49.175.34         192.168.1.135         TCP      66     443 → 62100 [ACK] Seq=1 Ack=2 Win=232 Len=0 SLE=1 SRE=2
+    393 31.751561      192.168.1.135         32.196.156.220        TCP      66     22908 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    394 31.870139      32.196.156.220        192.168.1.135         TCP      66     443 → 22908 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    395 31.870614      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    396 31.875943      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    397 31.997321      32.196.156.220        192.168.1.135         TCP      60     443 → 22908 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    398 31.997321      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    399 31.997932      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    400 31.997932      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    401 31.997932      32.196.156.220        192.168.1.135         TLSv1.3  70     Application Data
+    402 31.998174      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=518 Ack=4373 Win=65280 Len=0
+    403 32.005304      192.168.1.135         32.196.156.220        TLSv1.3  118    Change Cipher Spec, Application Data
+    404 32.124000      32.196.156.220        192.168.1.135         TCP      60     443 → 22908 [ACK] Seq=4373 Ack=582 Win=28160 Len=0
+    405 32.124000      32.196.156.220        192.168.1.135         TLSv1.3  233    Application Data
+    406 32.124584      192.168.1.135         32.196.156.220        TLSv1.3  1192   Application Data, Application Data, Application Data
+    407 32.239954      192.168.1.135         32.196.156.220        TCP      66     22909 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    408 32.269698      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=4552 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    409 32.269698      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=6004 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    410 32.269698      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=7456 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    411 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=8908 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    412 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=10360 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    413 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=11812 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    414 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=13264 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    415 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=14716 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    416 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=16168 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    417 32.270923      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=17620 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    418 32.271666      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=19072 Win=65280 Len=0
+    419 32.363455      32.196.156.220        192.168.1.135         TCP      66     443 → 22909 [SYN, ACK] Seq=0 Ack=1 Win=26883 Len=0 MSS=1452 SACK_PERM WS=256
+    420 32.364025      192.168.1.135         32.196.156.220        TCP      54     22909 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    421 32.369275      192.168.1.135         32.196.156.220        TLSv1.3  571    Client Hello (SNI=api2.cursor.sh)
+    422 32.390321      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=19072 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    423 32.390321      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data
+    424 32.390869      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=21976 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    425 32.390869      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=23428 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    426 32.390869      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=24880 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    427 32.390869      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=26332 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    428 32.390869      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=27784 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    429 32.391161      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=29236 Win=65280 Len=0
+    430 32.391281      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=29236 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    431 32.391281      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=30688 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    432 32.391281      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=32140 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    433 32.391454      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=33592 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    434 32.391454      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=35044 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    435 32.391605      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=36496 Win=65280 Len=0
+    436 32.391681      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data
+    437 32.391681      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=37948 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    438 32.391816      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=39400 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    439 32.391903      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=40852 Win=65280 Len=0
+    440 32.392039      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=40852 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    441 32.392039      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=42304 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    442 32.392163      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=43756 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    443 32.392248      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=45208 Win=65280 Len=0
+    444 32.392296      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=45208 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    445 32.392436      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=46660 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    446 32.392544      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=48112 Win=65280 Len=0
+    447 32.494983      32.196.156.220        192.168.1.135         TCP      60     443 → 22909 [ACK] Seq=1 Ack=518 Win=28160 Len=0
+    448 32.495209      32.196.156.220        192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec, Application Data
+    449 32.495209      32.196.156.220        192.168.1.135         TCP      1506   443 → 22909 [ACK] Seq=1453 Ack=518 Win=28160 Len=1452 [TCP segment of a reassembled PDU]
+    450 32.495294      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data, Application Data
+    451 32.495294      32.196.156.220        192.168.1.135         TLSv1.3  79     Application Data
+    452 32.495336      192.168.1.135         32.196.156.220        TCP      54     22909 → 443 [ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    453 32.502057      192.168.1.135         32.196.156.220        TCP      54     22909 → 443 [FIN, ACK] Seq=518 Ack=4382 Win=65280 Len=0
+    454 32.509050      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=48112 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    455 32.509050      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=49564 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    456 32.509243      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=51016 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    457 32.509293      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=52468 Win=65280 Len=0
+    458 32.509431      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data
+    459 32.509431      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=53920 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    460 32.509625      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=55372 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    461 32.509672      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=56824 Win=65280 Len=0
+    462 32.509703      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=56824 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    463 32.509910      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=58276 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    464 32.509910      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=59728 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    465 32.509968      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=61180 Win=65280 Len=0
+    466 32.510162      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=61180 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    467 32.510162      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=62632 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    468 32.510348      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=64084 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    469 32.510403      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=65536 Win=65280 Len=0
+    470 32.510456      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=65536 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    471 32.510530      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=66988 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    472 32.510562      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=68440 Win=65280 Len=0
+    473 32.510641      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=68440 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    474 32.510765      32.196.156.220        192.168.1.135         TLSv1.3  1506   Application Data
+    475 32.510801      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=71344 Win=65280 Len=0
+    476 32.510890      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=71344 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    477 32.511008      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=72796 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    478 32.511039      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=74248 Win=65280 Len=0
+    479 32.511157      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=74248 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    480 32.511267      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=75700 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    481 32.511307      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=77152 Win=130816 Len=0
+    482 32.511383      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=77152 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    483 32.511497      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=78604 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    484 32.511532      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=80056 Win=130816 Len=0
+    485 32.511623      32.196.156.220        192.168.1.135         TCP      1506   443 → 22908 [ACK] Seq=80056 Ack=1720 Win=46080 Len=1452 [TCP segment of a reassembled PDU]
+    486 32.511623      32.196.156.220        192.168.1.135         TLSv1.3  145    Application Data
+    487 32.511740      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=81599 Win=130816 Len=0
+    488 32.524627      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [ACK] Seq=1720 Ack=81600 Win=130816 Len=0
+    489 32.525189      192.168.1.135         32.196.156.220        TLSv1.3  78     Application Data
+    490 32.525202      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [FIN, ACK] Seq=1744 Ack=81600 Win=130816 Len=0
+    491 32.525242      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [RST, ACK] Seq=1745 Ack=81600 Win=0 Len=0
+    492 32.543384      192.168.1.135         104.18.19.125         TCP      66     22910 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    493 32.562037      104.18.19.125         192.168.1.135         TCP      66     443 → 22910 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    494 32.562144      192.168.1.135         104.18.19.125         TCP      54     22910 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    495 32.563948      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    496 32.579983      104.18.19.125         192.168.1.135         TCP      60     443 → 22910 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    497 32.581419      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    498 32.581419      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    499 32.586340      192.168.1.135         104.18.19.125         TCP      54     22910 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    500 32.602286      104.18.19.125         192.168.1.135         TCP      60     443 → 22910 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    501 32.602735      192.168.1.135         104.18.19.125         TCP      54     22910 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    502 32.625510      32.196.156.220        192.168.1.135         TCP      60     443 → 22909 [FIN, ACK] Seq=4382 Ack=519 Win=28160 Len=0
+    503 32.625923      192.168.1.135         32.196.156.220        TCP      54     22909 → 443 [ACK] Seq=519 Ack=4383 Win=65280 Len=0
+    504 32.642837      32.196.156.220        192.168.1.135         TCP      60     [TCP Dup ACK 408#1] 443 → 22908 [ACK] Seq=81600 Ack=1720 Win=46080 Len=0
+    505 32.642837      32.196.156.220        192.168.1.135         TCP      66     [TCP Dup ACK 408#2] 443 → 22908 [ACK] Seq=81600 Ack=1720 Win=46080 Len=0 SLE=1744 SRE=1745
+    506 32.642837      32.196.156.220        192.168.1.135         TCP      66     443 → 22908 [ACK] Seq=81600 Ack=1745 Win=46080 Len=0 SLE=1744 SRE=1745
+    507 32.642889      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [RST] Seq=1720 Win=0 Len=0
+    508 32.642905      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [RST] Seq=1720 Win=0 Len=0
+    509 32.642916      192.168.1.135         32.196.156.220        TCP      54     22908 → 443 [RST] Seq=1745 Win=0 Len=0
+    510 33.334285      fe80::1138:e6ee:2535:242d fe80::1               ICMPv6   86     Neighbor Solicitation for fe80::1 from 74:56:3c:dc:84:25
+    511 33.337611      fe80::1               fe80::1138:e6ee:2535:242d ICMPv6   78     Neighbor Advertisement fe80::1 (rtr, sol)
+    512 33.940762      192.168.1.135         52.98.250.178         TCP      55     38853 → 443 [ACK] Seq=1 Ack=1 Win=255 Len=1 [TCP segment of a reassembled PDU]
+    513 33.956644      52.98.250.178         192.168.1.135         TCP      66     443 → 38853 [ACK] Seq=1 Ack=2 Win=255 Len=0 SLE=1 SRE=2
+    514 34.086307      fe80::1138:e6ee:2535:242d fe80::1               DNS      88     Standard query 0x5694 A nike.com
+    515 34.087852      fe80::1               fe80::1138:e6ee:2535:242d DNS      152    Standard query response 0x5694 A nike.com A 65.8.202.46 A 65.8.202.125 A 65.8.202.108 A 65.8.202.8
+    516 34.243554      fe80::1138:e6ee:2535:242d fe80::1               DNS      89     Standard query 0x284d A amazon.es
+    517 34.252802      fe80::1               fe80::1138:e6ee:2535:242d DNS      137    Standard query response 0x284d A amazon.es A 3.254.238.145 A 3.253.168.8 A 3.253.182.49
+    518 34.257225      192.168.1.135         3.254.238.145         ICMP     74     Echo (ping) request  id=0x0001, seq=17/4352, ttl=128 (no response found!)
+    519 34.613425      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=661 Ack=661 Win=255 Len=110 [TCP segment of a reassembled PDU]
+    520 34.683359      35.233.131.14         192.168.1.135         TCP      91     443 → 7265 [PSH, ACK] Seq=1 Ack=1 Win=355 Len=37
+    521 34.723916      192.168.1.135         35.233.131.14         TCP      54     7265 → 443 [ACK] Seq=1 Ack=38 Win=254 Len=0
+    522 34.729209      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=661 Ack=771 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    523 34.771251      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=771 Ack=771 Win=255 Len=0
+    524 35.186343      192.168.1.135         141.227.128.128       TCP      55     [TCP Keep-Alive] 34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1
+    525 35.201536      141.227.128.128       192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+    526 35.379242      192.168.1.135         192.168.1.128         AJP13    164    AJP13 Error?
+    527 35.380883      192.168.1.128         192.168.1.135         AJP13    164    AJP13 Error?
+    528 35.426388      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=881 Ack=881 Win=254 Len=0
+    529 35.591993      192.168.1.135         104.18.19.125         TCP      66     22911 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    530 35.607945      104.18.19.125         192.168.1.135         TCP      66     443 → 22911 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    531 35.608140      192.168.1.135         104.18.19.125         TCP      54     22911 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    532 35.610784      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    533 35.629391      104.18.19.125         192.168.1.135         TCP      60     443 → 22911 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    534 35.631034      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    535 35.631034      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    536 35.636944      192.168.1.135         104.18.19.125         TCP      54     22911 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    537 35.653803      104.18.19.125         192.168.1.135         TCP      60     443 → 22911 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    538 35.654630      192.168.1.135         104.18.19.125         TCP      54     22911 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    539 35.708090      f4:fc:49:1d:66:e0     Broadcast             ARP      60     Who has 192.168.1.135? Tell 192.168.1.1
+    540 35.708188      GigaByteTech_dc:84:25 f4:fc:49:1d:66:e0     ARP      42     192.168.1.135 is at 74:56:3c:dc:84:25
+    541 36.057994      f4:fc:49:1d:66:e0     Broadcast             ARP      60     Who has 192.168.1.130? Tell 192.168.1.1
+    542 36.242611      192.168.1.135         192.168.1.255         UDP      1462   889 → 889 Len=1420
+    543 38.342528      20.33.3.2             192.168.1.135         TCP      60     443 → 14772 [ACK] Seq=1 Ack=1 Win=1 Len=0
+    544 38.343189      192.168.1.135         20.33.3.2             TCP      54     [TCP ACKed unseen segment] 14772 → 443 [ACK] Seq=1 Ack=2 Win=255 Len=0
+    545 38.351168      172.64.148.235        192.168.1.135         TLSv1.2  78     Application Data
+    546 38.355357      192.168.1.135         172.64.148.235        TLSv1.2  82     Application Data
+    547 38.371822      172.64.148.235        192.168.1.135         TCP      60     443 → 22700 [ACK] Seq=49 Ack=57 Win=16 Len=0
+    548 38.871208      192.168.1.135         3.254.238.145         ICMP     74     Echo (ping) request  id=0x0001, seq=18/4608, ttl=128 (no response found!)
+    549 39.270654      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    550 39.333247      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    551 39.671787      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    552 39.734869      192.168.1.135         192.168.1.142         AJP13    164    AJP13 Error?
+    553 39.845756      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    554 39.849208      192.168.1.142         192.168.1.135         AJP13    164    AJP13 Error?
+    555 39.893798      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=881 Ack=881 Win=254 Len=0
+    556 40.390304      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=881 Ack=881 Win=254 Len=110 [TCP segment of a reassembled PDU]
+    557 40.392044      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=881 Ack=991 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    558 40.436301      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=991 Ack=991 Win=253 Len=0
+    559 40.826644      192.168.1.135         104.18.19.125         TCP      66     22912 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    560 40.843486      104.18.19.125         192.168.1.135         TCP      66     443 → 22912 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    561 40.843878      192.168.1.135         104.18.19.125         TCP      54     22912 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    562 40.849916      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    563 40.867263      104.18.19.125         192.168.1.135         TCP      60     443 → 22912 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    564 40.873099      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    565 40.873099      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    566 40.879683      192.168.1.135         104.18.19.125         TCP      54     22912 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    567 40.897887      104.18.19.125         192.168.1.135         TCP      60     443 → 22912 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    568 40.898775      192.168.1.135         104.18.19.125         TCP      54     22912 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    569 41.333394      192.168.1.135         142.251.140.234       UDP      71     60894 → 443 Len=29
+    570 41.353630      142.251.140.234       192.168.1.135         UDP      67     443 → 60894 Len=25
+    571 41.426424      192.168.1.149         192.168.1.255         UDP      82     57621 → 57621 Len=40
+    572 43.842473      192.168.1.135         3.254.238.145         ICMP     74     Echo (ping) request  id=0x0001, seq=19/4864, ttl=128 (no response found!)
+    573 44.703481      192.168.1.149         224.0.0.251           MDNS     408    Standard query 0x001d PTR _googlecast._tcp.local, "QM" question PTR _%9E5E7C8F47989526C9BCD95D24084F6F0B27C5ED._sub._googlecast._tcp.local, "QM" question PTR _CFE7FEDA._sub._googlecast._tcp.local, "QM" question PTR _CC1AD845._sub._googlecast._tcp.local, "QM" question PTR _CC32E753._sub._googlecast._tcp.local, "QM" question SRV Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local, "QM" question SRV PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local, "QM" question PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local
+    574 44.703963      fe80::9c4c:27ff:feef:f08d ff02::fb              MDNS     428    Standard query 0x001d PTR _googlecast._tcp.local, "QM" question PTR _%9E5E7C8F47989526C9BCD95D24084F6F0B27C5ED._sub._googlecast._tcp.local, "QM" question PTR _CFE7FEDA._sub._googlecast._tcp.local, "QM" question PTR _CC1AD845._sub._googlecast._tcp.local, "QM" question PTR _CC32E753._sub._googlecast._tcp.local, "QM" question SRV Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local, "QM" question SRV PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local, "QM" question PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local
+    575 44.761081      192.168.1.142         224.0.0.251           MDNS     203    Standard query response 0x0000 SRV, cache flush 0 0 8009 eead30e9-2ef3-d758-bb3c-9f3a8eee85f1.local A, cache flush 192.168.1.142
+    576 44.765305      fe80::c74:fff:fe30:b6b3 ff02::fb              MDNS     235    Standard query response 0x0000 SRV, cache flush 0 0 8009 eead30e9-2ef3-d758-bb3c-9f3a8eee85f1.local AAAA, cache flush 2a0c:5a85:6801:f700:67e:4a0e:e980:15ff
+    577 44.805482      192.168.1.128         224.0.0.251           MDNS     195    Standard query response 0x0000 SRV, cache flush 0 0 8009 7f543f26-a3ed-c2d9-f365-6277a1349678.local A, cache flush 192.168.1.128
+    578 44.864007      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=881 Ack=881 Win=254 Len=110 [TCP segment of a reassembled PDU]
+    579 44.866154      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=881 Ack=991 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    580 44.911126      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=991 Ack=991 Win=254 Len=0
+    581 45.010210      192.168.1.128         224.0.0.251           MDNS     82     Standard query 0x0000 PTR _googlecast._tcp.local, "QM" question
+    582 45.062400      192.168.1.142         224.0.0.251           MDNS     435    Standard query response 0x0000 PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local TXT, cache flush SRV, cache flush 0 0 8009 eead30e9-2ef3-d758-bb3c-9f3a8eee85f1.local A, cache flush 192.168.1.142
+    583 45.112912      192.168.1.128         224.0.0.251           MDNS     420    Standard query response 0x0000 PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local TXT, cache flush SRV, cache flush 0 0 8009 7f543f26-a3ed-c2d9-f365-6277a1349678.local A, cache flush 192.168.1.128
+    584 45.214998      192.168.1.135         141.227.128.128       TCP      55     [TCP Keep-Alive] 34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1
+    585 45.214999      192.168.1.135         98.85.113.49          TCP      55     [TCP Keep-Alive] 50364 → 443 [ACK] Seq=1 Ack=1 Win=253 Len=1
+    586 45.231202      141.227.128.128       192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+    587 45.317290      98.85.113.49          192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 50364 [ACK] Seq=1 Ack=2 Win=187 Len=0 SLE=1 SRE=2
+    588 45.409167      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=991 Ack=991 Win=253 Len=110 [TCP segment of a reassembled PDU]
+    589 45.411108      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=991 Ack=1101 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    590 45.455336      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=1101 Ack=1101 Win=253 Len=0
+    591 45.614382      192.168.1.135         104.18.19.125         TCP      66     22918 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    592 45.635459      104.18.19.125         192.168.1.135         TCP      66     443 → 22918 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    593 45.635632      192.168.1.135         104.18.19.125         TCP      54     22918 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    594 45.638289      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    595 45.654443      104.18.19.125         192.168.1.135         TCP      60     443 → 22918 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    596 45.657901      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    597 45.657901      104.18.19.125         192.168.1.135         TLSv1.3  1404   Application Data
+    598 45.669889      192.168.1.135         104.18.19.125         TCP      54     22918 → 443 [FIN, ACK] Seq=518 Ack=2803 Win=65280 Len=0
+    599 45.686001      104.18.19.125         192.168.1.135         TCP      60     443 → 22918 [FIN, ACK] Seq=2803 Ack=519 Win=131072 Len=0
+    600 45.686805      192.168.1.135         104.18.19.125         TCP      54     22918 → 443 [ACK] Seq=519 Ack=2804 Win=65280 Len=0
+    601 46.769050      142.251.140.234       192.168.1.135         UDP      317    443 → 60894 Len=275
+    602 46.783833      192.168.1.135         142.251.140.234       UDP      75     60894 → 443 Len=33
+    603 47.152059      192.168.1.135         92.205.179.218        ICMP     42     Echo (ping) request  id=0x0019, seq=32000/125, ttl=3 (no response found!)
+    604 47.157829      172.16.16.161         192.168.1.135         ICMP     70     Time-to-live exceeded (Time to live exceeded in transit)
+    605 48.499142      52.98.200.178         192.168.1.135         TLSv1.2  91     Application Data
+    606 48.501373      52.98.200.178         192.168.1.135         TLSv1.2  96     Application Data
+    607 48.501373      52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+    608 48.501373      52.98.200.178         192.168.1.135         TLSv1.2  87     Application Data
+    609 48.501463      192.168.1.135         52.98.200.178         TCP      54     32457 → 443 [ACK] Seq=141 Ack=436 Win=255 Len=0
+    610 48.509454      192.168.1.135         52.98.200.178         TLSv1.2  124    Application Data, Application Data
+    611 48.585142      52.98.200.178         192.168.1.135         TCP      60     443 → 32457 [ACK] Seq=436 Ack=211 Win=253 Len=0
+    612 48.682477      fe80::1138:e6ee:2535:242d fe80::1               DNS      117    Standard query 0x01c3 A array502.prod.do.dsp.mp.microsoft.com
+    613 48.687889      fe80::1               fe80::1138:e6ee:2535:242d DNS      133    Standard query response 0x01c3 A array502.prod.do.dsp.mp.microsoft.com A 72.153.5.96
+    614 48.689923      192.168.1.135         72.153.5.96           TCP      66     22923 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    615 48.698235      fe80::1138:e6ee:2535:242d fe80::1               DNS      117    Standard query 0x15e8 A array507.prod.do.dsp.mp.microsoft.com
+    616 48.716720      fe80::1               fe80::1138:e6ee:2535:242d DNS      133    Standard query response 0x15e8 A array507.prod.do.dsp.mp.microsoft.com A 72.153.5.128
+    617 48.717283      fe80::1138:e6ee:2535:242d fe80::1               DNS      117    Standard query 0x1eea A array514.prod.do.dsp.mp.microsoft.com
+    618 48.718073      192.168.1.135         100.90.1.1            DNS      97     Standard query 0x15e8 A array507.prod.do.dsp.mp.microsoft.com
+    619 48.719071      192.168.1.135         72.153.5.128          TCP      66     22925 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    620 48.723155      fe80::1               fe80::1138:e6ee:2535:242d DNS      133    Standard query response 0x1eea A array514.prod.do.dsp.mp.microsoft.com A 72.153.5.135
+    621 48.723763      100.90.1.1            192.168.1.135         DNS      113    Standard query response 0x15e8 A array507.prod.do.dsp.mp.microsoft.com A 72.153.5.128
+    622 48.723786      192.168.1.135         100.90.1.1            ICMP     141    Destination unreachable (Port unreachable)
+    623 48.725966      192.168.1.135         72.153.5.135          TCP      66     22926 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    624 48.735029      192.168.1.135         72.153.5.135          TCP      66     22927 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    625 48.778753      72.153.5.96           192.168.1.135         TCP      66     443 → 22923 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+    626 48.779354      192.168.1.135         72.153.5.96           TCP      54     22923 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    627 48.781919      192.168.1.135         72.153.5.96           TLSv1.2  274    Client Hello (SNI=array502.prod.do.dsp.mp.microsoft.com)
+    628 48.807787      72.153.5.128          192.168.1.135         TCP      66     443 → 22925 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+    629 48.808450      192.168.1.135         72.153.5.128          TCP      54     22925 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    630 48.810430      192.168.1.135         72.153.5.128          TLSv1.2  274    Client Hello (SNI=array507.prod.do.dsp.mp.microsoft.com)
+    631 48.814494      72.153.5.135          192.168.1.135         TCP      66     443 → 22926 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+    632 48.815141      192.168.1.135         72.153.5.135          TCP      54     22926 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    633 48.817019      192.168.1.135         72.153.5.135          TLSv1.2  274    Client Hello (SNI=array514.prod.do.dsp.mp.microsoft.com)
+    634 48.823686      72.153.5.135          192.168.1.135         TCP      66     443 → 22927 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 WS=256 SACK_PERM
+    635 48.824038      192.168.1.135         72.153.5.135          TCP      54     22927 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    636 48.826122      192.168.1.135         72.153.5.135          TLSv1.2  274    Client Hello (SNI=array514.prod.do.dsp.mp.microsoft.com)
+    637 48.844161      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    638 48.860472      192.168.1.135         3.254.238.145         ICMP     74     Echo (ping) request  id=0x0001, seq=20/5120, ttl=128 (no response found!)
+    639 48.873637      72.153.5.96           192.168.1.135         TCP      1506   443 → 22923 [ACK] Seq=1 Ack=221 Win=4194560 Len=1452 [TCP segment of a reassembled PDU]
+    640 48.873637      72.153.5.96           192.168.1.135         TLSv1.2  1026   Server Hello, Certificate, Server Key Exchange, Server Hello Done
+    641 48.873893      192.168.1.135         72.153.5.96           TCP      54     22923 → 443 [ACK] Seq=221 Ack=2425 Win=65280 Len=0
+    642 48.883419      192.168.1.135         72.153.5.96           TLSv1.2  212    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+    643 48.902515      72.153.5.128          192.168.1.135         TCP      1506   443 → 22925 [ACK] Seq=1 Ack=221 Win=4194560 Len=1452 [TCP segment of a reassembled PDU]
+    644 48.902515      72.153.5.128          192.168.1.135         TLSv1.2  1025   Server Hello, Certificate, Server Key Exchange, Server Hello Done
+    645 48.902623      192.168.1.135         72.153.5.128          TCP      54     22925 → 443 [ACK] Seq=221 Ack=2424 Win=65280 Len=0
+    646 48.904127      192.168.1.135         72.153.5.128          TLSv1.2  212    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+    647 48.907282      72.153.5.135          192.168.1.135         TCP      1506   443 → 22926 [ACK] Seq=1 Ack=221 Win=4194560 Len=1452 [TCP segment of a reassembled PDU]
+    648 48.907282      72.153.5.135          192.168.1.135         TLSv1.2  1025   Server Hello, Certificate, Server Key Exchange, Server Hello Done
+    649 48.907343      192.168.1.135         72.153.5.135          TCP      54     22926 → 443 [ACK] Seq=221 Ack=2424 Win=65280 Len=0
+    650 48.910058      192.168.1.135         72.153.5.135          TLSv1.2  212    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+    651 48.916198      72.153.5.135          192.168.1.135         TCP      1506   443 → 22927 [ACK] Seq=1 Ack=221 Win=4194560 Len=1452 [TCP segment of a reassembled PDU]
+    652 48.916198      72.153.5.135          192.168.1.135         TLSv1.2  1024   Server Hello, Certificate, Server Key Exchange, Server Hello Done
+    653 48.916293      192.168.1.135         72.153.5.135          TCP      54     22927 → 443 [ACK] Seq=221 Ack=2423 Win=65280 Len=0
+    654 48.918200      192.168.1.135         72.153.5.135          TLSv1.2  212    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+    655 48.973720      72.153.5.96           192.168.1.135         TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+    656 48.977166      192.168.1.135         72.153.5.96           TLSv1.2  314    Application Data
+    657 48.977438      192.168.1.135         72.153.5.96           TLSv1.2  690    Application Data
+    658 48.988314      192.168.1.135         172.64.155.209        TCP      55     [TCP Keep-Alive] 50297 → 443 [ACK] Seq=1 Ack=1 Win=251 Len=1
+    659 48.994801      72.153.5.128          192.168.1.135         TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+    660 48.997800      192.168.1.135         72.153.5.128          TLSv1.2  313    Application Data
+    661 48.998032      192.168.1.135         72.153.5.128          TLSv1.2  690    Application Data
+    662 49.000134      72.153.5.135          192.168.1.135         TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+    663 49.002333      192.168.1.135         72.153.5.135          TLSv1.2  314    Application Data
+    664 49.002561      192.168.1.135         72.153.5.135          TLSv1.2  690    Application Data
+    665 49.005215      172.64.155.209        192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 50297 [ACK] Seq=1 Ack=2 Win=16 Len=0 SLE=1 SRE=2
+    666 49.007544      72.153.5.135          192.168.1.135         TLSv1.2  105    Change Cipher Spec, Encrypted Handshake Message
+    667 49.009250      192.168.1.135         72.153.5.135          TLSv1.2  314    Application Data
+    668 49.009422      192.168.1.135         72.153.5.135          TLSv1.2  712    Application Data
+    669 49.053771      192.168.1.135         192.168.1.255         UDP      1462   889 → 889 Len=1420
+    670 49.066718      72.153.5.96           192.168.1.135         TCP      60     443 → 22923 [ACK] Seq=2476 Ack=1275 Win=4193536 Len=0
+    671 49.067726      72.153.5.96           192.168.1.135         TLSv1.2  610    Application Data
+    672 49.087821      72.153.5.128          192.168.1.135         TCP      60     443 → 22925 [ACK] Seq=2475 Ack=1274 Win=4193536 Len=0
+    673 49.088498      72.153.5.128          192.168.1.135         TLSv1.2  610    Application Data
+    674 49.092397      72.153.5.135          192.168.1.135         TCP      60     443 → 22926 [ACK] Seq=2475 Ack=1275 Win=4193536 Len=0
+    675 49.092837      72.153.5.135          192.168.1.135         TLSv1.2  610    Application Data
+    676 49.098294      72.153.5.135          192.168.1.135         TCP      60     443 → 22927 [ACK] Seq=2474 Ack=1297 Win=4193280 Len=0
+    677 49.099857      72.153.5.135          192.168.1.135         TLSv1.2  610    Application Data
+    678 49.116121      192.168.1.135         72.153.5.96           TCP      54     22923 → 443 [ACK] Seq=1275 Ack=3032 Win=64768 Len=0
+    679 49.132032      192.168.1.135         72.153.5.128          TCP      54     22925 → 443 [ACK] Seq=1274 Ack=3031 Win=64768 Len=0
+    680 49.148042      192.168.1.135         72.153.5.135          TCP      54     22926 → 443 [ACK] Seq=1275 Ack=3031 Win=64768 Len=0
+    681 49.148248      192.168.1.135         72.153.5.135          TCP      54     22927 → 443 [ACK] Seq=1297 Ack=3030 Win=64768 Len=0
+    682 49.674660      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    683 49.833629      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    684 49.881489      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=991 Ack=991 Win=254 Len=110 [TCP segment of a reassembled PDU]
+    685 49.986007      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=991 Ack=1101 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    686 50.041299      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=1101 Ack=1101 Win=253 Len=0
+    687 50.345793      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    688 50.425373      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=1101 Ack=1101 Win=253 Len=110 [TCP segment of a reassembled PDU]
+    689 50.426833      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=1101 Ack=1211 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    690 50.472644      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=1211 Ack=1211 Win=252 Len=0
+    691 50.828918      192.168.1.135         104.18.19.125         TCP      66     22932 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    692 50.839813      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    693 50.847122      104.18.19.125         192.168.1.135         TCP      66     443 → 22932 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    694 50.847444      192.168.1.135         104.18.19.125         TCP      54     22932 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    695 50.853749      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    696 50.858549      fe80::1138:e6ee:2535:242d fe80::1               DNS      117    Standard query 0x0d27 A array507.prod.do.dsp.mp.microsoft.com
+    697 50.859931      fe80::1               fe80::1138:e6ee:2535:242d DNS      133    Standard query response 0x0d27 A array507.prod.do.dsp.mp.microsoft.com A 72.153.5.128
+    698 50.873343      104.18.19.125         192.168.1.135         TCP      60     443 → 22932 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    699 50.876870      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    700 50.877122      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    701 50.877204      192.168.1.135         104.18.19.125         TCP      54     22932 → 443 [ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    702 50.880618      192.168.1.135         104.18.19.125         TCP      54     22932 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    703 50.897902      104.18.19.125         192.168.1.135         TCP      60     443 → 22932 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    704 50.898170      192.168.1.135         104.18.19.125         TCP      54     22932 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    705 51.735572      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    706 51.863244      192.168.1.135         31.13.83.51           TLSv1.2  122    Application Data
+    707 51.879597      31.13.83.51           192.168.1.135         TCP      60     443 → 16621 [ACK] Seq=141 Ack=205 Win=294 Len=0
+    708 51.958459      31.13.83.51           192.168.1.135         TLSv1.2  124    Application Data
+    709 52.006572      192.168.1.135         31.13.83.51           TCP      54     16621 → 443 [ACK] Seq=205 Ack=211 Win=254 Len=0
+    710 52.341528      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    711 52.484952      3e:8d:0b:3d:03:44     Broadcast             ARP      60     Who has 192.168.1.1? Tell 192.168.1.143
+    712 53.010826      192.168.1.135         104.18.19.125         TCP      55     [TCP Keep-Alive] 30813 → 443 [ACK] Seq=1 Ack=1 Win=252 Len=1
+    713 53.029756      104.18.19.125         192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 30813 [ACK] Seq=1 Ack=2 Win=16 Len=0 SLE=1 SRE=2
+    714 53.345864      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    715 53.541029      192.168.1.135         2.20.253.88           TLSv1.2  78     Application Data
+    716 53.541797      192.168.1.135         2.20.253.88           TCP      54     18149 → 443 [FIN, ACK] Seq=25 Ack=1 Win=255 Len=0
+    717 53.545577      192.168.1.135         100.90.1.1            DNS      110    Standard query 0x797b A stream-production.avcdn.net OPT
+    718 53.550731      100.90.1.1            192.168.1.135         DNS      360    Standard query response 0x797b A stream-production.avcdn.net CNAME stream-production.avcdn.net.akamaized.net CNAME a6143.dscd.akamai.net A 2.20.253.87 A 2.20.253.71 A 2.20.253.79 A 2.20.253.73 A 2.20.253.84 A 2.20.253.82 A 2.20.253.97 A 2.20.253.96 A 2.20.253.94 OPT
+    719 53.552143      192.168.1.135         2.20.253.87           TCP      66     22937 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    720 53.558811      2.20.253.88           192.168.1.135         TCP      60     443 → 18149 [FIN, ACK] Seq=25 Ack=25 Win=505 Len=0
+    721 53.558811      2.20.253.88           192.168.1.135         TCP      60     443 → 18149 [ACK] Seq=1 Ack=25 Win=505 Len=0
+    722 53.558811      2.20.253.88           192.168.1.135         TCP      78     [TCP Out-Of-Order] 443 → 18149 [PSH, ACK] Seq=1 Ack=25 Win=505 Len=24
+    723 53.558811      2.20.253.88           192.168.1.135         TCP      60     443 → 18149 [ACK] Seq=26 Ack=26 Win=505 Len=0
+    724 53.559016      192.168.1.135         2.20.253.88           TCP      54     [TCP Dup ACK 715#1] 18149 → 443 [ACK] Seq=26 Ack=1 Win=255 Len=0
+    725 53.559095      192.168.1.135         2.20.253.88           TCP      54     18149 → 443 [RST, ACK] Seq=26 Ack=25 Win=0 Len=0
+    726 53.559151      192.168.1.135         2.20.253.88           TCP      54     18149 → 443 [RST] Seq=26 Win=0 Len=0
+    727 53.567604      2.20.253.87           192.168.1.135         TCP      66     443 → 22937 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1384 SACK_PERM WS=128
+    728 53.567835      192.168.1.135         2.20.253.87           TCP      54     22937 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    729 53.573100      192.168.1.135         2.20.253.87           TLSv1.3  866    Client Hello (SNI=stream-production.avcdn.net)
+    730 53.590362      2.20.253.87           192.168.1.135         TLSv1.3  324    Server Hello, Change Cipher Spec, Application Data, Application Data
+    731 53.593490      192.168.1.135         2.20.253.87           TLSv1.3  134    Change Cipher Spec, Application Data
+    732 53.593768      192.168.1.135         2.20.253.87           TLSv1.3  154    Application Data
+    733 53.608528      2.20.253.87           192.168.1.135         TCP      60     443 → 22937 [ACK] Seq=271 Ack=893 Win=64640 Len=0
+    734 53.609291      2.20.253.87           192.168.1.135         TCP      60     443 → 22937 [ACK] Seq=271 Ack=993 Win=64640 Len=0
+    735 53.611294      2.20.253.87           192.168.1.135         TLSv1.3  373    Application Data
+    736 53.612570      2.20.253.87           192.168.1.135         TCP      1506   443 → 22937 [ACK] Seq=590 Ack=993 Win=64640 Len=1452 [TCP segment of a reassembled PDU]
+    737 53.612570      2.20.253.87           192.168.1.135         TCP      1506   443 → 22937 [ACK] Seq=2042 Ack=993 Win=64640 Len=1452 [TCP segment of a reassembled PDU]
+    738 53.612570      2.20.253.87           192.168.1.135         TLSv1.3  115    Application Data
+    739 53.612630      192.168.1.135         2.20.253.87           TCP      54     22937 → 443 [ACK] Seq=993 Ack=3555 Win=65280 Len=0
+    740 53.697377      fe80::1               fe80::1138:e6ee:2535:242d ICMPv6   86     Neighbor Solicitation for fe80::1138:e6ee:2535:242d from f4:fc:49:1d:66:e0
+    741 53.697424      fe80::1138:e6ee:2535:242d fe80::1               ICMPv6   86     Neighbor Advertisement fe80::1138:e6ee:2535:242d (sol, ovr) is at 74:56:3c:dc:84:25
+    742 54.989917      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=1101 Ack=1101 Win=253 Len=110 [TCP segment of a reassembled PDU]
+    743 55.107038      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=1101 Ack=1211 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    744 55.148225      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=1211 Ack=1211 Win=253 Len=0
+    745 55.244301      192.168.1.135         141.227.128.128       TCP      55     [TCP Keep-Alive] 34007 → 443 [ACK] Seq=1 Ack=1 Win=254 Len=1
+    746 55.259304      141.227.128.128       192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 34007 [ACK] Seq=1 Ack=2 Win=501 Len=0 SLE=1 SRE=2
+    747 55.435722      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=1211 Ack=1211 Win=252 Len=110 [TCP segment of a reassembled PDU]
+    748 55.437453      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=1211 Ack=1321 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    749 55.482271      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=1321 Ack=1321 Win=252 Len=0
+    750 55.620295      192.168.1.135         104.18.19.125         TCP      66     22938 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    751 55.637016      104.18.19.125         192.168.1.135         TCP      66     443 → 22938 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    752 55.637199      192.168.1.135         104.18.19.125         TCP      54     22938 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    753 55.640487      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    754 55.657647      104.18.19.125         192.168.1.135         TCP      60     443 → 22938 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    755 55.661154      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    756 55.661154      104.18.19.125         192.168.1.135         TLSv1.3  1402   Application Data
+    757 55.668158      192.168.1.135         104.18.19.125         TCP      54     22938 → 443 [FIN, ACK] Seq=518 Ack=2801 Win=65280 Len=0
+    758 55.685747      104.18.19.125         192.168.1.135         TCP      60     443 → 22938 [FIN, ACK] Seq=2801 Ack=519 Win=131072 Len=0
+    759 55.686646      192.168.1.135         104.18.19.125         TCP      54     22938 → 443 [ACK] Seq=519 Ack=2802 Win=65280 Len=0
+    760 55.737004      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    761 56.344173      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    762 57.335441      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    763 57.744409      192.168.1.135         104.18.19.125         TCP      66     22943 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    764 57.747466      192.168.1.135         100.90.1.1            DNS      80     Standard query 0x95ce HTTPS translate.google.com
+    765 57.748292      fe80::1138:e6ee:2535:242d fe80::1               DNS      94     Standard query 0xb4ef HTTPS api3.cursor.sh
+    766 57.748412      192.168.1.135         100.90.1.1            DNS      80     Standard query 0x4119 A translate.google.com
+    767 57.748973      fe80::1138:e6ee:2535:242d fe80::1               DNS      94     Standard query 0x6d5f A api3.cursor.sh
+    768 57.749421      192.168.1.135         104.18.19.125         TLSv1.2  235    Ignored Unknown Record
+    769 57.749534      192.168.1.135         104.18.19.125         TLSv1.2  7689   Application Data, Application Data
+    770 57.751432      fe80::1               fe80::1138:e6ee:2535:242d DNS      126    Standard query response 0x6d5f A api3.cursor.sh A 104.18.18.125 A 104.18.19.125
+    771 57.753280      100.90.1.1            192.168.1.135         DNS      96     Standard query response 0x4119 A translate.google.com A 216.58.204.206
+    772 57.760616      104.18.19.125         192.168.1.135         TCP      66     443 → 22943 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    773 57.760768      192.168.1.135         104.18.19.125         TCP      54     22943 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    774 57.762488      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    775 57.763504      100.90.1.1            192.168.1.135         DNS      130    Standard query response 0x95ce HTTPS translate.google.com SOA ns1.google.com
+    776 57.765165      104.18.19.125         192.168.1.135         TCP      60     443 → 30813 [ACK] Seq=1 Ack=183 Win=16 Len=0
+    777 57.765384      192.168.1.135         216.58.204.206        QUIC     1292   Initial, DCID=7b4925a05244ccf6, PKN: 1, PADDING, CRYPTO, CRYPTO, PING, CRYPTO, CRYPTO, PING, CRYPTO, CRYPTO, CRYPTO, PADDING
+    778 57.765488      192.168.1.135         216.58.204.206        QUIC     1292   Initial, DCID=7b4925a05244ccf6, PKN: 2, CRYPTO
+    779 57.765856      104.18.19.125         192.168.1.135         TCP      60     443 → 30813 [ACK] Seq=1 Ack=2983 Win=16 Len=0
+    780 57.765940      192.168.1.135         216.58.204.206        QUIC     1292   Initial, DCID=7b4925a05244ccf6, PKN: 3, CRYPTO, CRYPTO, CRYPTO, PADDING, CRYPTO, PADDING, CRYPTO, PADDING, PING, PADDING, PING, PADDING
+    781 57.765962      fe80::1               fe80::1138:e6ee:2535:242d DNS      299    Standard query response 0xb4ef HTTPS api3.cursor.sh CNAME api3.cursor.sh.cdn.cloudflare.net HTTPS A 104.18.18.125 A 104.18.19.125 AAAA 2606:4700::6812:127d AAAA 2606:4700::6812:137d
+    782 57.765993      fe80::1138:e6ee:2535:242d fe80::1               ICMPv6   347    Destination Unreachable (Port unreachable)
+    783 57.766064      104.18.19.125         192.168.1.135         TLSv1.2  93     Application Data
+    784 57.766151      192.168.1.135         216.58.204.206        QUIC     117    0-RTT, DCID=7b4925a05244ccf6
+    785 57.766341      192.168.1.135         216.58.204.206        QUIC     1288   0-RTT, DCID=7b4925a05244ccf6
+    786 57.766479      192.168.1.135         216.58.204.206        QUIC     1292   0-RTT, DCID=7b4925a05244ccf6
+    787 57.766935      104.18.19.125         192.168.1.135         TCP      60     443 → 30813 [ACK] Seq=40 Ack=7818 Win=16 Len=0
+    788 57.767418      192.168.1.135         216.58.204.206        QUIC     322    0-RTT, DCID=7b4925a05244ccf6
+    789 57.778602      104.18.19.125         192.168.1.135         TCP      60     443 → 22943 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    790 57.780568      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    791 57.780685      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    792 57.780755      192.168.1.135         104.18.19.125         TCP      54     22943 → 443 [ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    793 57.783876      216.58.204.206        192.168.1.135         QUIC     82     Initial, SCID=fb4925a05244ccf6, PKN: 1, ACK
+    794 57.783876      216.58.204.206        192.168.1.135         QUIC     82     Initial, SCID=fb4925a05244ccf6, PKN: 2, ACK
+    795 57.784018      216.58.204.206        192.168.1.135         QUIC     1292   Initial, SCID=fb4925a05244ccf6, PKN: 3, ACK, PADDING
+    796 57.784112      216.58.204.206        192.168.1.135         QUIC     1292   Initial, SCID=fb4925a05244ccf6, PKN: 4, ACK, PADDING
+    797 57.784125      192.168.1.135         104.18.19.125         TCP      54     22943 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    798 57.796552      104.18.19.125         192.168.1.135         TLSv1.2  186    Application Data
+    799 57.796552      104.18.19.125         192.168.1.135         TLSv1.2  101    Application Data
+    800 57.796552      104.18.19.125         192.168.1.135         TLSv1.2  85     Application Data
+    801 57.796703      192.168.1.135         104.18.19.125         TCP      54     30813 → 443 [ACK] Seq=7818 Ack=250 Win=251 Len=0
+    802 57.801218      192.168.1.135         104.18.19.125         TLSv1.2  89     Application Data
+    803 57.803004      104.18.19.125         192.168.1.135         TCP      60     443 → 22943 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    804 57.803226      192.168.1.135         104.18.19.125         TCP      54     22943 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    805 57.803282      216.58.204.206        192.168.1.135         QUIC     1292   Initial, SCID=fb4925a05244ccf6, PKN: 5, CRYPTO, PADDING
+    806 57.803372      216.58.204.206        192.168.1.135         QUIC     324    Protected Payload (KP0)
+    807 57.805062      216.58.204.206        192.168.1.135         QUIC     996    Protected Payload (KP0)
+    808 57.805062      216.58.204.206        192.168.1.135         QUIC     67     Protected Payload (KP0)
+    809 57.845744      192.168.1.135         216.58.204.206        QUIC     79     Handshake, DCID=fb4925a05244ccf6
+    810 57.846149      192.168.1.135         216.58.204.206        QUIC     120    Handshake, DCID=fb4925a05244ccf6
+    811 57.846454      192.168.1.135         216.58.204.206        QUIC     73     Protected Payload (KP0), DCID=fb4925a05244ccf6
+    812 57.850161      216.58.204.206        192.168.1.135         QUIC     90     Protected Payload (KP0)
+    813 57.853722      216.58.204.206        192.168.1.135         QUIC     63     Protected Payload (KP0)
+    814 57.854165      192.168.1.135         216.58.204.206        QUIC     73     Protected Payload (KP0), DCID=fb4925a05244ccf6
+    815 57.859369      104.18.19.125         192.168.1.135         TCP      60     443 → 30813 [ACK] Seq=250 Ack=7853 Win=16 Len=0
+    816 57.864887      192.168.1.135         104.18.19.125         TCP      66     22944 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    817 57.869935      216.58.204.206        192.168.1.135         QUIC     1292   Protected Payload (KP0)
+    818 57.869935      216.58.204.206        192.168.1.135         QUIC     658    Protected Payload (KP0)
+    819 57.869935      216.58.204.206        192.168.1.135         QUIC     163    Protected Payload (KP0)
+    820 57.871092      192.168.1.135         216.58.204.206        QUIC     77     Protected Payload (KP0), DCID=fb4925a05244ccf6
+    821 57.880770      104.18.19.125         192.168.1.135         TCP      66     443 → 22944 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    822 57.880870      192.168.1.135         104.18.19.125         TCP      54     22944 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    823 57.882491      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    824 57.885863      216.58.204.206        192.168.1.135         QUIC     65     Protected Payload (KP0)
+    825 57.898754      104.18.19.125         192.168.1.135         TCP      60     443 → 22944 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    826 57.899985      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    827 57.899985      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    828 57.907835      192.168.1.135         104.18.19.125         TCP      54     22944 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    829 57.909492      192.168.1.135         216.58.204.206        QUIC     74     Protected Payload (KP0), DCID=fb4925a05244ccf6
+    830 57.924327      104.18.19.125         192.168.1.135         TCP      60     443 → 22944 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    831 57.925419      192.168.1.135         104.18.19.125         TCP      54     22944 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    832 58.020820      192.168.1.135         100.49.175.34         TCP      55     [TCP Keep-Alive] 1471 → 443 [ACK] Seq=1 Ack=1 Win=250 Len=1
+    833 58.148070      100.49.175.34         192.168.1.135         TCP      66     [TCP Keep-Alive ACK] 443 → 1471 [ACK] Seq=1 Ack=2 Win=140 Len=0 SLE=1 SRE=2
+    834 58.352082      172.64.148.235        192.168.1.135         TLSv1.2  78     Application Data
+    835 58.354300      192.168.1.135         172.64.148.235        TLSv1.2  82     Application Data
+    836 58.371146      172.64.148.235        192.168.1.135         TCP      60     443 → 22700 [ACK] Seq=73 Ack=85 Win=16 Len=0
+    837 58.727642      192.168.1.135         100.90.1.1            DNS      77     Standard query 0x62b9 HTTPS chat.deepseek.com
+    838 58.728208      192.168.1.135         100.90.1.1            DNS      77     Standard query 0xcfa3 A chat.deepseek.com
+    839 58.743521      100.90.1.1            192.168.1.135         DNS      158    Standard query response 0x62b9 HTTPS chat.deepseek.com CNAME d3bbv8sr76az5s.cloudfront.net HTTPS A 3.173.21.63
+    840 58.751754      100.90.1.1            192.168.1.135         DNS      136    Standard query response 0xcfa3 A chat.deepseek.com CNAME d3bbv8sr76az5s.cloudfront.net A 3.173.21.63
+    841 58.753626      192.168.1.135         3.173.21.63           TCP      66     19290 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    842 58.769216      3.173.21.63           192.168.1.135         TCP      66     443 → 19290 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1440 SACK_PERM WS=512
+    843 58.769298      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    844 58.770350      192.168.1.135         3.173.21.63           TLSv1.3  2062   Client Hello (SNI=chat.deepseek.com)
+    845 58.787325      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=1 Ack=2009 Win=69632 Len=0
+    846 58.787796      3.173.21.63           192.168.1.135         TLSv1.3  1376   Server Hello, Change Cipher Spec, Application Data, Application Data
+    847 58.835779      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=2009 Ack=1323 Win=64000 Len=0
+    848 58.853583      192.168.1.135         3.173.21.63           TLSv1.3  118    Change Cipher Spec, Application Data
+    849 58.858659      192.168.1.135         3.173.21.63           TLSv1.3  146    Application Data
+    850 58.858738      192.168.1.135         3.173.21.63           TLSv1.3  1663   Application Data
+    851 58.870324      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=1323 Ack=2073 Win=69632 Len=0
+    852 58.870324      3.173.21.63           192.168.1.135         TLSv1.3  233    Application Data
+    853 58.870324      3.173.21.63           192.168.1.135         TLSv1.3  116    Application Data
+    854 58.870680      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=3774 Ack=1564 Win=65280 Len=0
+    855 58.872621      192.168.1.135         3.173.21.63           TLSv1.3  85     Application Data
+    856 58.875173      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=1564 Ack=3774 Win=73216 Len=0
+    857 58.875173      3.173.21.63           192.168.1.135         TLSv1.3  85     Application Data
+    858 58.915107      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=3805 Ack=1595 Win=65280 Len=0
+    859 58.944891      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=1595 Ack=3805 Win=73216 Len=0
+    860 59.098689      155.102.214.180       192.168.1.135         TLSv1.2  78     Application Data
+    861 59.099541      155.102.214.180       192.168.1.135         TCP      60     443 → 8414 [FIN, ACK] Seq=25 Ack=2 Win=83 Len=0
+    862 59.099892      192.168.1.135         155.102.214.180       TCP      54     8414 → 443 [ACK] Seq=2 Ack=25 Win=255 Len=0
+    863 59.100398      192.168.1.135         155.102.214.180       TCP      54     8414 → 443 [ACK] Seq=2 Ack=26 Win=255 Len=0
+    864 59.128375      3.173.21.63           192.168.1.135         TLSv1.3  464    Application Data
+    865 59.128375      3.173.21.63           192.168.1.135         TLSv1.3  716    Application Data
+    866 59.128885      3.173.21.63           192.168.1.135         TLSv1.3  266    Application Data
+    867 59.128885      3.173.21.63           192.168.1.135         TLSv1.3  86     Application Data
+    868 59.128885      3.173.21.63           192.168.1.135         TLSv1.3  85     Application Data
+    869 59.129102      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=3805 Ack=2942 Win=64000 Len=0
+    870 60.112086      192.168.1.135         192.168.1.142         TCP      164    32431 → 8009 [PSH, ACK] Seq=1211 Ack=1211 Win=253 Len=110 [TCP segment of a reassembled PDU]
+    871 60.252877      192.168.1.142         192.168.1.135         TCP      164    8009 → 32431 [PSH, ACK] Seq=1211 Ack=1321 Win=1161 Len=110 [TCP segment of a reassembled PDU]
+    872 60.302872      192.168.1.135         192.168.1.142         TCP      54     32431 → 8009 [ACK] Seq=1321 Ack=1321 Win=252 Len=0
+    873 60.351248      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Leave group 224.168.100.1
+    874 60.446719      192.168.1.135         192.168.1.128         TCP      164    22275 → 8009 [PSH, ACK] Seq=1321 Ack=1321 Win=252 Len=110 [TCP segment of a reassembled PDU]
+    875 60.448232      192.168.1.128         192.168.1.135         TCP      164    8009 → 22275 [PSH, ACK] Seq=1321 Ack=1431 Win=1881 Len=110 [TCP segment of a reassembled PDU]
+    876 60.494006      192.168.1.135         192.168.1.128         TCP      54     22275 → 8009 [ACK] Seq=1431 Ack=1431 Win=252 Len=0
+    877 60.734115      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    878 60.742609      192.168.1.135         3.173.21.63           TLSv1.3  175    Application Data
+    879 60.743828      192.168.1.135         3.173.21.63           TLSv1.3  179    Application Data
+    880 60.759167      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=2942 Ack=3926 Win=73216 Len=0
+    881 60.759167      3.173.21.63           192.168.1.135         TCP      60     443 → 19290 [ACK] Seq=2942 Ack=4051 Win=73216 Len=0
+    882 60.843898      192.168.1.135         224.0.0.22            IGMPv3   54     Membership Report / Join group 224.168.100.1 for any sources
+    883 60.853330      192.168.1.135         104.18.19.125         TCP      66     19291 → 443 [SYN] Seq=0 Win=65535 Len=0 MSS=1460 WS=256 SACK_PERM
+    884 60.869857      104.18.19.125         192.168.1.135         TCP      66     443 → 19291 [SYN, ACK] Seq=0 Ack=1 Win=65535 Len=0 MSS=1400 SACK_PERM WS=8192
+    885 60.870083      192.168.1.135         104.18.19.125         TCP      54     19291 → 443 [ACK] Seq=1 Ack=1 Win=65280 Len=0
+    886 60.872608      192.168.1.135         104.18.19.125         TLSv1.3  571    Client Hello (SNI=api3.cursor.sh)
+    887 60.888509      104.18.19.125         192.168.1.135         TCP      60     443 → 19291 [ACK] Seq=1 Ack=518 Win=131072 Len=0
+    888 60.891420      104.18.19.125         192.168.1.135         TLSv1.3  1506   Server Hello, Change Cipher Spec
+    889 60.891420      104.18.19.125         192.168.1.135         TLSv1.3  1403   Application Data
+    890 60.902147      192.168.1.135         104.18.19.125         TCP      54     19291 → 443 [FIN, ACK] Seq=518 Ack=2802 Win=65280 Len=0
+    891 60.922628      104.18.19.125         192.168.1.135         TCP      60     443 → 19291 [FIN, ACK] Seq=2802 Ack=519 Win=131072 Len=0
+    892 60.923359      192.168.1.135         104.18.19.125         TCP      54     19291 → 443 [ACK] Seq=519 Ack=2803 Win=65280 Len=0
+    893 61.012596      3.173.21.63           192.168.1.135         TLSv1.3  898    Application Data
+    894 61.012596      3.173.21.63           192.168.1.135         TLSv1.3  85     Application Data
+    895 61.014820      3.173.21.63           192.168.1.135         TLSv1.3  464    Application Data
+    896 61.014820      3.173.21.63           192.168.1.135         TLSv1.3  864    Application Data
+    897 61.014906      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=4051 Ack=5037 Win=65280 Len=0
+    898 61.015228      3.173.21.63           192.168.1.135         TCP      1494   443 → 19290 [ACK] Seq=5037 Ack=4051 Win=73216 Len=1440 [TCP segment of a reassembled PDU]
+    899 61.015228      3.173.21.63           192.168.1.135         TLSv1.3  659    Application Data
+    900 61.016871      3.173.21.63           192.168.1.135         TLSv1.3  1428   Application Data
+    901 61.016918      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=4051 Ack=8456 Win=65280 Len=0
+    902 61.018656      3.173.21.63           192.168.1.135         TCP      1494   443 → 19290 [ACK] Seq=8456 Ack=4051 Win=73216 Len=1440 [TCP segment of a reassembled PDU]
+    903 61.018656      3.173.21.63           192.168.1.135         TLSv1.3  657    Application Data
+    904 61.066723      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=4051 Ack=10499 Win=65280 Len=0
+    905 61.098664      3.173.21.63           192.168.1.135         TCP      1494   443 → 19290 [ACK] Seq=10499 Ack=4051 Win=73216 Len=1440 [TCP segment of a reassembled PDU]
+    906 61.098664      3.173.21.63           192.168.1.135         TLSv1.3  302    Application Data
+    907 61.098664      3.173.21.63           192.168.1.135         TLSv1.3  85     Application Data
+    908 61.146755      192.168.1.135         3.173.21.63           TCP      54     19290 → 443 [ACK] Seq=4051 Ack=12218 Win=65280 Len=0
+    909 61.785623      192.168.1.135         142.251.140.234       UDP      71     60894 → 443 Len=29
+    910 61.787167      192.168.1.135         192.168.1.255         UDP      1462   889 → 889 Len=1420
+    911 61.805220      142.251.140.234       192.168.1.135         UDP      67     443 → 60894 Len=25
+    912 62.826910      192.168.1.128         224.0.0.251           MDNS     82     Standard query 0x0000 PTR _googlecast._tcp.local, "QM" question
+    913 62.880502      192.168.1.142         224.0.0.251           MDNS     435    Standard query response 0x0000 PTR Haier-Android-TV-DVB-eead30e92ef3d758bb3c9f3a8eee85f1._googlecast._tcp.local TXT, cache flush SRV, cache flush 0 0 8009 eead30e9-2ef3-d758-bb3c-9f3a8eee85f1.local A, cache flush 192.168.1.142
+    914 62.929855      192.168.1.128         224.0.0.251           MDNS     420    Standard query response 0x0000 PTR PANASONIC-TV-7f543f26a3edc2d9f3656277a1349678._googlecast._tcp.local TXT, cache flush SRV, cache flush 0 0 8009 7f543f26-a3ed-c2d9-f365-6277a1349678.local A, cache flush 192.168.1.128
+    915 63.744171      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
+    916 64.336066      GigaByteTech_dc:84:25 Broadcast             ARP      42     Who has 192.168.1.140? Tell 192.168.1.135
